@@ -1,0 +1,128 @@
+{
+    "sources": [
+        {
+	"TABLES" : {
+            "PRODUIT": {
+                "NOM_FICHIER":"lane.com_RÉFÉRENTIEL PRODUITS",
+                "COLONNES":{
+                    "EAN":"ean",
+                    "PRIX_UNITE":"prix_unit",
+                    "NOM_PRODUIT":"product_name"
+                },
+                "DELIMITER":","
+            },
+            "COMMANDE": {
+                "NOM_FICHIER":"lane.com_TRANSACTION",
+                "COLONNES":{
+                    "ID_COMMANDE":"id_transaction",
+                    "DATE_COMMANDE":"date"
+                },
+                "DELIMITER":","
+            },
+            "DETAIL_COMMANDE": {
+                "NOM_FICHIER":"lane.com_ORDER_ITEMS",
+                "COLONNES":{
+                    "ID_COMMANDE":"id_transaction",
+                    "QUANTITE":"quantity",
+                    "EAN":"ean"
+                },
+                "DELIMITER":","
+            }
+	},
+            "NOM_SITE":"LANE"
+        },
+        {
+	"TABLES" : {
+            "PRODUIT": {
+                "NOM_FICHIER":"lyons-evans.com_products",
+                "COLONNES":{
+                    "EAN":"code-ean",
+                    "PRIX_UNITE":"prix-unitaire",
+                    "NOM_PRODUIT":"nom-du-produit"
+                },
+                "DELIMITER":"\t"
+            },
+            "COMMANDE": {
+                "NOM_FICHIER":"lyons-evans.com_commande",
+                "COLONNES":{
+                    "ID_COMMANDE":"order-id",
+                    "DATE_COMMANDE":"timestamp"
+                },
+                "DELIMITER":"\t"
+            },
+            "DETAIL_COMMANDE": {
+                "NOM_FICHIER":"lyons-evans.com_détail commandes",
+                "COLONNES":{
+                    "ID_COMMANDE":"order-id",
+                    "QUANTITE":"qte",
+                    "EAN":"code-ean"
+                },
+                "DELIMITER":"\t"
+            }
+	    },
+            "NOM_SITE":"LYONS-EVANS"
+        },
+        {
+	"TABLES" : {
+            "PRODUIT": {
+                "NOM_FICHIER":"ross-armstrong.com_products",
+                "COLONNES":{
+                    "EAN":"ean",
+                    "PRIX_UNITE":"prix",
+                    "NOM_PRODUIT":"name"
+                },
+                "DELIMITER":"\t"
+            },
+            "COMMANDE": {
+                "NOM_FICHIER":"ross-armstrong.com_commandes",
+                "COLONNES":{
+                    "ID_COMMANDE":"id commande",
+                    "DATE_COMMANDE":"date transaction"
+                },
+                "DELIMITER":"\t"
+            },
+            "DETAIL_COMMANDE": {
+                "NOM_FICHIER":"ross-armstrong.com_détail commandes",
+                "COLONNES":{
+                    "ID_COMMANDE":"id commande",
+                    "QUANTITE":"quantité",
+                    "EAN":"ean"
+                },
+                "DELIMITER":"\t"
+            }
+	},
+            "NOM_SITE":"ROSS-ARMSTRONG"
+        },
+        {
+	"TABLES" : {
+            "PRODUIT": {
+                "NOM_FICHIER":"wiley-ruiz.com_CATALOGUE",
+                "COLONNES":{
+                    "EAN":"CODE-EAN",
+                    "PRIX_UNITE":"PRIX",
+                    "NOM_PRODUIT":"NAME"
+                },
+                "DELIMITER":";"
+            },
+            "COMMANDE": {
+                "NOM_FICHIER":"wiley-ruiz.com_COMMANDE",
+                "COLONNES":{
+                    "ID_COMMANDE":"ORDER-ID",
+                    "DATE_COMMANDE":"DATE-COMMANDE"
+                },
+                "DELIMITER":";"
+            },
+            "DETAIL_COMMANDE": {
+                "NOM_FICHIER":"wiley-ruiz.com_DÉTAIL COMMANDES",
+                "COLONNES":{
+                    "ID_COMMANDE":"ORDER-ID",
+                    "QUANTITE":"QUANTITY",
+                    "EAN":"CODE-EAN"
+                },
+                "DELIMITER":";"
+            }
+	},
+            "NOM_SITE":"WILEY-RUIZ"
+        }
+    ]
+}
